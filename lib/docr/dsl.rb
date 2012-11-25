@@ -6,8 +6,8 @@ module Docr
     #       description "Awesome method for creating top level method"
     #     end
     #   end
-    def docr(klass)
-      Docr::Group.new(klass){ yield }
+    def docr(klass, &block)
+      Docr::Group.new(klass, &block)
     end
   end
 end
