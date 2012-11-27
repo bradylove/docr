@@ -45,6 +45,9 @@ GEM
     rspec-instafail (0.2.4)
     rspec-mocks (2.12.0)
     ruby-progressbar (1.0.2)
+    ruby2ruby (2.0.1)
+      ruby_parser (~> 3.0.0)
+      sexp_processor (~> 4.0)
     ruby_parser (3.0.3)
     sexp_processor (4.1.2)
     simple_cov (0.2.0)
@@ -64,6 +67,7 @@ DEPENDENCIES
   rb-fsevent
   rdoc (~> 3.12)
   rspec (~> 2.12.0)
+  ruby2ruby
   ruby_parser
   sexp_processor
   simple_cov

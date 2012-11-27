@@ -13,6 +13,7 @@ group :development do
   gem 'rb-fsevent'
   gem 'ruby_parser'
   gem 'sexp_processor'
+  gem 'ruby2ruby'
   gem 'pry'
   gem 'pry-nav'
   gem "bundler", "~> 1.2.0"
