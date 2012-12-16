@@ -4,6 +4,12 @@ module Docr
     #   docr Docr::DSL do
     #     doc :docr do
     #       description "Awesome method for creating top level method"
+    #       path "/example/api/path"
+    #       arguments
+    #
+    #       example do
+    #         # Code Sample
+    #       end
     #     end
     #   end
     def docr(klass, &block)

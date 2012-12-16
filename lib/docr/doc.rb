@@ -11,14 +11,22 @@ module Docr
       @method_name = method_name
 
       instance_eval(&block) if block
+
+      post_initialize
+    end
+
+    def post_initialize
+      render_output
     end
 
     def render_output
+      puts "#{group.to_s}##{method_name}"
       puts "Description: #{description}"
-      puts "Path:        #{path}"
-      puts "Arguments:   #{arguments}"
+      puts "Path:        #{path}" if path
+      puts "Arguments:   #{arguments}" if arguments
       puts "Example:"
       puts example
+      puts "\n"
     end
 
     def description(*args)

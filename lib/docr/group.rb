@@ -10,7 +10,7 @@ module Docr
     end
 
     def doc(method_name, &block)
-      docs << Docr::Doc.new(self, method_name, &block)
+      docs << Docr::Doc.new(klass, method_name, &block)
     end
   end
 end
